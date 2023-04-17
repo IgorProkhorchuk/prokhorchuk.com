@@ -1,0 +1,125 @@
+* { padding: 0; margin: 0; }
+
+:root {
+    --base-color: #d2dae2;
+    --secondary-color: #0be811;
+}
+
+body {
+    background-color: #1e272e;
+    font-family: 'Julius Sans One', sans-serif;
+    color: var(--base-color);
+    overflow: hidden;
+}
+
+body::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(../images/IMG_2264.JPG);
+    background-size: cover;
+    background-position: top-center;
+    opacity: 0.15;
+    filter: blur(7px);
+}
+
+nav, footer, #about-text, #contact-container {
+    width: 100%;
+}
+
+nav {
+    margin-top: -30px;
+    position: fixed;
+    top: 0;
+    text-align: right;
+    z-index: 2;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    padding: 5vh;
+}
+
+#about-text, #sub-header {
+    font-size: 2vh;
+}
+
+#main-header, #sub-header {
+    text-align: center;
+}
+
+#main-header {
+    font-size: 6vh;
+}
+
+#nav-ul {
+    padding-right: 5vh;
+}
+
+#sm-ul, #nav-ul {
+    list-style-type: none;
+}
+
+
+#about-header {
+    font-size: 4vh;
+}
+
+.center, #contact-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.sm-logo {
+    color: var(--base-color);
+    font-size: 3vh;
+    transition: 0.2s ease-in;
+}
+
+.sm-logo:hover, .nav-link:hover, .nav-link.selected, .green-detail {
+    color: var(--secondary-color);
+}
+
+.sm-li {
+    display: inline-block;
+    margin-left: 5vh;
+}
+
+.nav-link {
+    font-size: 1.5vh;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.2s ease-in;
+}
+
+.nav-li {
+    display: inline-block;
+    margin: 5vh 5vh 0 0;
+}
+
+@media screen and (max-width: 650px) {
+
+    nav, footer, #nav-top, #nav-ul, .nav-link {
+        padding: 0;
+        margin: 0;
+    }
+
+    #sm-ul, #nav-ul {
+        text-align: center;
+    }
+
+    .sm-li {
+        margin: 0 2vh 5vh 2vh;
+    }
+
+    .nav-li {
+        margin: 5vh 2vh 0 2vh;
+    }
+}
