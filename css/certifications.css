@@ -11,6 +11,8 @@
 .google img{
    max-width: 100px;
    max-height: 100px;
+   padding: 5px;
+   border: 1px solid #ffff;
    /* transition-property: all;
    transition-duration: 0.5s;
    transition-delay: 0s;
@@ -25,12 +27,23 @@
    flex-direction: column;
    /* flex-wrap: wrap; */
    gap: 30px;
+   
 }
 .aws img{
    max-width: 100px;
    max-height: 100px;
    padding-bottom: 10px;
+   
 }
 .aws{
    padding-top: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+h4{
+   font-size: small;
+}
+.aws h4{
+   padding-bottom: 20px;
 }
