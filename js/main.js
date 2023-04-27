@@ -5,6 +5,7 @@ $(document).ready(function(){
     $("#portfolio").hide();
     $("#about").hide();
     $("#contact").hide();
+    $("#licenses & certifications").hide();
 
     $(".nav-link").click(function(e){
         $(`#${currentPage}`).fadeOut(100)

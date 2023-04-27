@@ -2,12 +2,42 @@
    position: relative;
    text-align: center;
    display: flex;
+   justify-content: space-between;
    flex-direction: row;
+   gap: 10%;
+   padding: 50px;
 }
-.center-crt {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   z-index: 0;
+
+.google img{
+   max-width: 100px;
+   max-height: 100px;
+   padding: 5px;
+   border: 1px solid #ffff
+}
+
+.google{
+   display: flex;
+   text-align: center;
+   flex-direction: column;
+   /* flex-wrap: wrap; */
+   gap: 30px;
+   
+}
+.aws img{
+   max-width: 100px;
+   max-height: 100px;
+   padding-bottom: 10px;
+   
+}
+.aws{
+   padding-top: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+h4{
+   font-size: small;
+}
+.aws, .google h4{
+   padding: 20px 0px;
 }
