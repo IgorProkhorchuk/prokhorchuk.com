@@ -3,8 +3,8 @@
    text-align: center;
    display: flex;
    justify-content: space-between;
-   flex-direction: column;
-   gap: 30px;
+   flex-direction: row;
+   gap: 10%;
    padding: 50px;
 }
 
@@ -12,15 +12,9 @@
    max-width: 100px;
    max-height: 100px;
    padding: 5px;
-   border: 1px solid #ffff;
-   /* transition-property: all;
-   transition-duration: 0.5s;
-   transition-delay: 0s;
-   transition-timing-function: ease-in; */
+   border: 1px solid #ffff
 }
-/* .google img:hover{
-   padding: 50px 50px;
-} */
+
 .google{
    display: flex;
    text-align: center;
@@ -44,6 +38,6 @@
 h4{
    font-size: small;
 }
-.aws h4{
-   padding-bottom: 20px;
+.aws, .google h4{
+   padding: 20px 0px;
 }
