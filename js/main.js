@@ -4,8 +4,9 @@ $(document).ready(function(){
 
     $("#portfolio").hide();
     $("#about").hide();
+    $("#certifications").hide();
     $("#contact").hide();
-    $("#licenses & certifications").hide();
+    
 
     $(".nav-link").click(function(e){
         $(`#${currentPage}`).fadeOut(100)
