@@ -16,12 +16,12 @@ function ProjectList() {
   return React.createElement("div", {
     id: "img-container"
   }, React.createElement(Project, {
-    img: "images/SnakeXNA_IMG.PNG",
-    caption: "snake xna",
-    url: "https://github.com/occnah/SnakeXNA/tree/master/SnakeXNA"
+    img: "images/toptravel.svg",
+    caption: "travel agency TopTravel",
+    url: "https://toptravel.crimea.ua/"
   }), React.createElement(Project, {
-    img: "images/ReactionTest_IMG.PNG",
-    caption: "reaction test",
+    img: "images/irig-tech.png",
+    caption: "irig tech",
     url: "./pages/reaction-test/reaction-test.html"
   }), React.createElement(Project, {
     img: "images/CalcRN.png",
