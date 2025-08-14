@@ -3,82 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>o</title>
-    <style>
-        :root {
-            --bg: #0a0a0a;
-            --text: #e0e0e0;
-            --accent: #4E9A06;
-            --secondary: #3465A4;
-            --font-mono: 'Fira Code', 'Courier New', monospace;
-        }
-        body {
-            background-color: var(--bg);
-            color: var(--text);
-            font-family: var(--font-mono);
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            line-height: 1.6;
-        }
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .prompt { color: var(--accent); }
-        .cursor { animation: blink 1s infinite; }
-        @keyframes blink { 50% { opacity: 0; } }
-        .header { margin-bottom: 3rem; }
-        .section { margin-bottom: 2rem; }
-        .tag { color: var(--secondary); }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <title>System Status Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="images/logopfcweb.png"/>
 </head>
 <body>
-    <div class="header">
-        <h1>igor@prokhorchuk.com<span class="prompt">:~$</span> <span class="cursor">_</span></h1>
+    <header class="dashboard-header">
+        <h1>HumanOS Status</h1>
+        <div class="status-indicator">
+            <span class="status-light"></span>
+            <span>CONSCIOUSNESS STABLE</span>
+        </div>
+    </header>
+
+    <main class="dashboard-grid">
+        <div class="grid-widget chart-widget">
+            <h3>Cognitive Load (%)</h3>
+            <div id="cpu-chart" class="chart-container"></div>
+        </div>
+        <div class="grid-widget chart-widget">
+            <h3>Memory Recall (GB)</h3>
+            <div id="mem-chart" class="chart-container"></div>
+        </div>
+        <div class="grid-widget chart-widget">
+            <h3>Neural Link (kbps)</h3>
+            <div id="net-chart" class="chart-container"></div>
+        </div>
+        <div class="grid-widget status-widget">
+            <h3>Vital Signs</h3>
+            <ul id="service-status" class="service-list">
+                <!-- Service statuses will be injected by JS -->
+            </ul>
+        </div>
+        <div class="grid-widget log-widget">
+            <h3>Consciousness Stream</h3>
+            <div id="log-ticker" class="log-ticker">
+                <!-- Log messages will be injected by JS -->
+            </div>
+        </div>
+    </main>
+
+    <div id="contact-modal" class="modal-container">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Accessing Core Identity</h2>
+            <p>You have established a direct neural link.</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:igor@prokhorchuk.com">igor@prokhorchuk.com</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/IgorProkhorchuk" target="_blank">github.com/IgorProkhorchuk</a></li>
+                <li><strong>Blog:</strong> <a href="https://visudo.eu" target="_blank">visudo.eu</a></li>
+            </ul>
+        </div>
     </div>
 
-    <div class="section">
-        <p><span class="prompt">$</span> whoami</p>
-        <p>Linux System Administrator | Infrastructure Engineer | Big Spring Boot fan</p>
-    </div>
-
-    <div class="section">
-        <p><span class="prompt">$</span> cat about.txt</p>
-        <p>With 7 years of experience in System administration, I specialize in:</p>
-        <ul>
-            <li>Linux server management</li>
-            <li>Networking</li>
-            <li>Infrastructure automation</li>
-            <li>Monitoring and alerting</li>
-            <li>Cloud infrastructure (AWS/GCP)</li>
-            <li>Containerization & Orchestration (Docker, Kubernetes)</li>
-            <li>CI/CD pipelines</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <p><span class="prompt">$</span> ls ~/projects/</p>
-        <ul>
-            <li><a href="https://cutbyme.de/">booking system for hairdress saloon</a> <span class="tag">#springBoot #postgreSQL</span></li>
-            <li><a href="#">Kubernetes cluster setup</a> <span class="tag">#k8s #terraform</span></li>
-            <li><a href="#">Monitoring stack</a> <span class="tag">#bash #automation</span></li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <p><span class="prompt">$</span> contact_me.sh</p>
-        <ul>
-            <li>Email: <a href="mailto:igor@prokhorchuk.com">igor@prokhorchuk.com</a></li>
-            <li>GitHub: <a href="https://github.com/IgorProkhorchuk">github/IgorProkhorchuk</a></li>
-            <li>Blog: <a href="https://igorprokhorchuk.com">visudo.eu</a></li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <p><span class="prompt">$</span> <span class="cursor">_</span></p>
-    </div>
-    <script src="js/main.js"></script>
-    <script src="js/components.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="js/dashboard.js"></script>
 </body>
 </html>
