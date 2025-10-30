@@ -3,61 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>System Status Dashboard</title>
-    <link rel="stylesheet" href="css/dashboard.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="images/logopfcweb.png"/>
+    <meta name="description" content="Igor Prokhorchuk - Linux system administrator, site reliability engineer, and network engineer crafting resilient infrastructure.">
+    <title>p</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logopfcweb.png" />
 </head>
 <body>
-    <header class="dashboard-header">
-        <h1>HumanOS Status</h1>
-        <div class="status-indicator">
-            <span class="status-light"></span>
-            <span>CONSCIOUSNESS STABLE</span>
-        </div>
-    </header>
-
-    <main class="dashboard-grid">
-        <div class="grid-widget chart-widget">
-            <h3>Cognitive Load (%)</h3>
-            <div id="cpu-chart" class="chart-container"></div>
-        </div>
-        <div class="grid-widget chart-widget">
-            <h3>Memory Recall (GB)</h3>
-            <div id="mem-chart" class="chart-container"></div>
-        </div>
-        <div class="grid-widget chart-widget">
-            <h3>Neural Link (kbps)</h3>
-            <div id="net-chart" class="chart-container"></div>
-        </div>
-        <div class="grid-widget status-widget">
-            <h3>Vital Signs</h3>
-            <ul id="service-status" class="service-list">
-                <!-- Service statuses will be injected by JS -->
-            </ul>
-        </div>
-        <div class="grid-widget log-widget">
-            <h3>Consciousness Stream</h3>
-            <div id="log-ticker" class="log-ticker">
-                <!-- Log messages will be injected by JS -->
+    <div class="screen">
+        <header class="terminal-window" role="banner">
+            <div class="terminal-bar" aria-hidden="true">
+                <span class="bar-dot bar-dot--red"></span>
+                <span class="bar-dot bar-dot--yellow"></span>
+                <span class="bar-dot bar-dot--green"></span>
+                <span class="bar-title">igor@workstation:~</span>
             </div>
-        </div>
-    </main>
+            <div class="terminal-content">
+                <p class="terminal-line"><span class="prompt">igor@workstation:~$</span> echo $USER</p>
+                <h1 class="terminal-title">igor@prokhorchuk.com</h1>
+                <p class="terminal-line">Linux system administrator, site reliability engineer, and network engineer crafting resilient infrastructure.</p>
+                <p class="terminal-line"><span class="prompt">igor@workstation:~$</span> <a href="mailto:igor@prokhorchuk.com">cat ~/CONTACT</a></p>
+            </div>
+        </header>
 
-    <div id="contact-modal" class="modal-container">
-        <div class="modal-content">
-            <span class="modal-close">&times;</span>
-            <h2>Accessing Core Identity</h2>
-            <p>You have established a direct neural link.</p>
-            <ul>
-                <li><strong>Email:</strong> <a href="mailto:igor@prokhorchuk.com">igor@prokhorchuk.com</a></li>
-                <li><strong>GitHub:</strong> <a href="https://github.com/IgorProkhorchuk" target="_blank">github.com/IgorProkhorchuk</a></li>
-                <li><strong>Blog:</strong> <a href="https://visudo.eu" target="_blank">visudo.eu</a></li>
-            </ul>
-        </div>
+        <main class="terminal-sections" role="main">
+            <section class="terminal-card" aria-labelledby="whoami">
+                <h2 class="terminal-heading" id="whoami">whoami</h2>
+                <p class="terminal-line">Engineer with a network-first mindset who enjoys building resilient Linux platforms from bare metal to cloud-native.</p>
+            </section>
+
+            <section class="terminal-card" aria-labelledby="projects">
+                <h2 class="terminal-heading" id="projects">projects &amp; websites</h2>
+                <ul class="terminal-list">
+                    <li><span class="prompt">$</span> <a href="https://visudo.eu" target="_blank" rel="noreferrer">visudo.eu</a> — Lab notes on Linux internals, automation, and SRE craft.</li>
+                    <li><span class="prompt">$</span> <a href="https://cutbyme.de" target="_blank" rel="noreferrer">cutbyme.de</a> — Booking platform kept online with containerized services and observability.</li>
+                    <li><span class="prompt">$</span> <a href="https://toptravel.crimea.ua" target="_blank" rel="noreferrer">toptravel.crimea.ua</a> — Travel operations modernized with secure networking and backups.</li>
+                    <li><span class="prompt">$</span> <a href="https://github.com/occnah" target="_blank" rel="noreferrer">github.com/occnah</a> — Open-source tooling, playbooks, and experiments.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="terminal-footer" role="contentinfo">
+            <p class="terminal-line"><span class="prompt">igor@workstation:~$</span> uptime is a feature.</p>
+        </footer>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="js/dashboard.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
