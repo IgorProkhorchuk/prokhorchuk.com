@@ -1,3 +1,4 @@
+
 :root {
     --bg: #0a0a0a;
     --text: #e0e0e0;
@@ -11,10 +12,17 @@ body {
     font-family: var(--font-mono);
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1.5rem;
     line-height: 1.6;
 }
-a { color: var(--accent); text-decoration: none; }
+
+.main-title {
+    /* min, preferred, max */
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    word-break: break-all; /* Prevents overflow on very small screens */
+}
+
+a { color: var(--text); text-decoration: none; }
 a:hover { text-decoration: underline; }
 .prompt { color: var(--accent); }
 .cursor { animation: blink 1s infinite; }
@@ -22,4 +30,5 @@ a:hover { text-decoration: underline; }
 .header { margin-bottom: 3rem; }
 .section { margin-bottom: 2rem; }
 .tag { color: var(--secondary); font-size: smaller; }
-li { color: var(--accent); text-decoration: none; }
+
+.linkContacts { color: var(--accent); text-decoration: none; }
