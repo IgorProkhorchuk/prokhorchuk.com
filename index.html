@@ -7,33 +7,47 @@
     <title>p</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" type="image/x-icon" href="images/logopfcweb.png" />
 </head>
 <body>
-    <div class="page">
-        <header class="intro" role="banner">
-            <h1 class="intro__title">igor@prokhorchuk.com</h1>
-            <p class="intro__tagline">Linux system administrator, site reliability engineer, and network engineer crafting resilient infrastructure.</p>
+    <div class="screen">
+        <header class="terminal-window" role="banner">
+            <div class="terminal-bar" aria-hidden="true">
+                <span class="bar-dot bar-dot--red"></span>
+                <span class="bar-dot bar-dot--yellow"></span>
+                <span class="bar-dot bar-dot--green"></span>
+                <span class="bar-title">igor@workstation:~</span>
+            </div>
+            <div class="terminal-content">
+                <p class="terminal-line"><span class="prompt">igor@workstation:~$</span> echo $USER</p>
+                <h1 class="terminal-title">igor@prokhorchuk.com</h1>
+                <p class="terminal-line">Linux system administrator, site reliability engineer, and network engineer crafting resilient infrastructure.</p>
+                <p class="terminal-line"><span class="prompt">igor@workstation:~$</span> <a href="mailto:igor@prokhorchuk.com">cat ~/CONTACT</a></p>
+            </div>
         </header>
 
-        <main class="content" role="main">
-            <section class="block" aria-labelledby="whoami">
-                <h2 class="block__heading" id="whoami">whoami</h2>
-                <p>Engineer with a network-first mindset who enjoys building resilient Linux platforms from bare metal to cloud-native.</p>
+        <main class="terminal-sections" role="main">
+            <section class="terminal-card" aria-labelledby="whoami">
+                <h2 class="terminal-heading" id="whoami">whoami</h2>
+                <p class="terminal-line">Engineer with a network-first mindset who enjoys building resilient Linux platforms from bare metal to cloud-native.</p>
             </section>
 
-            <section class="block" aria-labelledby="projects">
-                <h2 class="block__heading" id="projects">projects &amp; websites</h2>
-                <ul class="list">
-                    <li><a href="https://visudo.eu" target="_blank" rel="noreferrer">visudo.eu</a></li>
-                    <li><a href="https://cutbyme.de" target="_blank" rel="noreferrer">cutbyme.de</a></li>
-                    <li><a href="https://toptravel.crimea.ua" target="_blank" rel="noreferrer">toptravel.crimea.ua</a></li>
-                    <li><a href="https://github.com/occnah" target="_blank" rel="noreferrer">github.com/occnah</a></li>
+            <section class="terminal-card" aria-labelledby="projects">
+                <h2 class="terminal-heading" id="projects">projects &amp; websites</h2>
+                <ul class="terminal-list">
+                    <li><span class="prompt">$</span> <a href="https://visudo.eu" target="_blank" rel="noreferrer">visudo.eu</a> — Lab notes on Linux internals, automation, and SRE craft.</li>
+                    <li><span class="prompt">$</span> <a href="https://cutbyme.de" target="_blank" rel="noreferrer">cutbyme.de</a> — Booking platform kept online with containerized services and observability.</li>
+                    <li><span class="prompt">$</span> <a href="https://toptravel.crimea.ua" target="_blank" rel="noreferrer">toptravel.crimea.ua</a> — Travel operations modernized with secure networking and backups.</li>
+                    <li><span class="prompt">$</span> <a href="https://github.com/occnah" target="_blank" rel="noreferrer">github.com/occnah</a> — Open-source tooling, playbooks, and experiments.</li>
                 </ul>
             </section>
         </main>
+
+        <footer class="terminal-footer" role="contentinfo">
+            <p class="terminal-line"><span class="prompt">igor@workstation:~$</span> uptime is a feature.</p>
+        </footer>
     </div>
 
     <script src="js/main.js"></script>
