@@ -3,83 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>o</title>
-    <style>
-        :root {
-            --bg: #0a0a0a;
-            --text: #e0e0e0;
-            --accent: #4E9A06;
-            --secondary: #3465A4;
-            --font-mono: 'Fira Code', 'Courier New', monospace;
-        }
-        body {
-            background-color: var(--bg);
-            color: var(--text);
-            font-family: var(--font-mono);
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 2rem;
-            line-height: 1.6;
-        }
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .prompt { color: var(--accent); }
-        .cursor { animation: blink 1s infinite; }
-        @keyframes blink { 50% { opacity: 0; } }
-        .header { margin-bottom: 3rem; }
-        .section { margin-bottom: 2rem; }
-        .tag { color: var(--secondary); }
-    </style>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="images/logopfcweb.png"/>
+    <meta name="description" content="Igor Prokhorchuk - Linux system administrator, site reliability engineer, and network engineer crafting resilient infrastructure.">
+    <title>p</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logopfcweb.png" />
 </head>
 <body>
-    <div class="header">
-        <h1>igor@prokhorchuk.com<span class="prompt">:~$</span> <span class="cursor">_</span></h1>
+    <div class="screen">
+        <header class="terminal-window" role="banner">
+            <div class="terminal-bar" aria-hidden="true">
+                <span class="bar-dot bar-dot--red"></span>
+                <span class="bar-dot bar-dot--yellow"></span>
+                <span class="bar-dot bar-dot--green"></span>
+                <span class="bar-title">igor@workstation:~</span>
+            </div>
+            <div class="terminal-content">
+                <p class="terminal-line"><span class="prompt">igor@workstation:~$</span> echo $USER</p>
+                <h1 class="terminal-title">igor@prokhorchuk.com</h1>
+                <p class="terminal-line">Linux system administrator, site reliability engineer, and network engineer crafting resilient infrastructure.</p>
+                <p class="terminal-line"><span class="prompt">igor@workstation:~$</span> <a href="mailto:igor@prokhorchuk.com">cat ~/CONTACT</a></p>
+            </div>
+        </header>
+
+        <main class="terminal-sections" role="main">
+            <section class="terminal-card" aria-labelledby="whoami">
+                <h2 class="terminal-heading" id="whoami">whoami</h2>
+                <p class="terminal-line">Engineer with a network-first mindset who enjoys building resilient Linux platforms from bare metal to cloud-native.</p>
+            </section>
+
+            <section class="terminal-card" aria-labelledby="projects">
+                <h2 class="terminal-heading" id="projects">projects &amp; websites</h2>
+                <ul class="terminal-list">
+                    <li><span class="prompt">$</span> <a href="https://visudo.eu" target="_blank" rel="noreferrer">visudo.eu</a> — Lab notes on Linux internals, automation, and SRE craft.</li>
+                    <li><span class="prompt">$</span> <a href="https://cutbyme.de" target="_blank" rel="noreferrer">cutbyme.de</a> — Booking platform kept online with containerized services and observability.</li>
+                    <li><span class="prompt">$</span> <a href="https://toptravel.crimea.ua" target="_blank" rel="noreferrer">toptravel.crimea.ua</a> — Travel operations modernized with secure networking and backups.</li>
+                    <li><span class="prompt">$</span> <a href="https://github.com/occnah" target="_blank" rel="noreferrer">github.com/occnah</a> — Open-source tooling, playbooks, and experiments.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="terminal-footer" role="contentinfo">
+            <p class="terminal-line"><span class="prompt">igor@workstation:~$</span> uptime is a feature.</p>
+        </footer>
     </div>
 
-    <div class="section">
-        <p><span class="prompt">$</span> whoami</p>
-        <p>Linux System Administrator | Infrastructure Engineer</p>
-    </div>
-
-    <div class="section">
-        <p><span class="prompt">$</span> cat about.txt</p>
-        <p>With 12 years of experience in System administration, I specialize in:</p>
-        <ul>
-            <li>Linux server management</li>
-            <li>Networking</li>
-            <li>CI/CD pipelines</li>
-            <li>Infrastructure automation</li>
-            <li>Monitoring and alerting</li>
-            <li>Cloud infrastructure</li>
-            <li>Containerization & Orchestration</li>
-            <li>Security best practices</li>
-        </ul>
-    </div>
-
-    <!-- <div class="section">
-        <p><span class="prompt">$</span> ls ~/projects/</p>
-        <ul>
-            <li><a href="https://cutbyme.de/">booking system for hairdress saloon</a> <span class="tag">#springBoot #postgreSQL</span></li>
-            <li><a href="#">Kubernetes cluster setup</a> <span class="tag">#k8s #terraform</span></li>
-            <li><a href="#">Monitoring stack</a> <span class="tag">#bash #automation</span></li>
-        </ul>
-    </div> -->
-
-    <div class="section">
-        <p><span class="prompt">$</span> contact_me.sh</p>
-        <ul>
-            <li>Email: <a href="mailto:igor@prokhorchuk.com">igor@prokhorchuk.com</a></li>
-            <!-- <li>GitHub: <a href="https://github.com/IgorProkhorchuk">github/IgorProkhorchuk</a></li> -->
-            <li>Blog: <a href="https://igorprokhorchuk.com">visudo.eu</a></li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <p><span class="prompt">$</span> <span class="cursor">_</span></p>
-    </div>
     <script src="js/main.js"></script>
-    <script src="js/components.js"></script>
 </body>
 </html>
