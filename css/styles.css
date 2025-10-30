@@ -1,0 +1,25 @@
+:root {
+    --bg: #0a0a0a;
+    --text: #e0e0e0;
+    --accent: #4E9A06;
+    --secondary: #3465A4;
+    --font-mono: 'Fira Code', 'Courier New', monospace;
+}
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-mono);
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    line-height: 1.6;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.prompt { color: var(--accent); }
+.cursor { animation: blink 1s infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+.header { margin-bottom: 3rem; }
+.section { margin-bottom: 2rem; }
+.tag { color: var(--secondary); font-size: smaller; }
+li { color: var(--accent); text-decoration: none; }
