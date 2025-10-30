@@ -1,17 +1,15 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const frames = [
-        'p', 'pr', 'pro', 'prok', 'prokh', 'prokho', 'prokhor', 'prokhorc',
-        'prokhorchu', 'prokhorchuk', 'prokhorchu', 'prokhorc', 'prokhor',
-        'prokho', 'prokh', 'prok', 'pro', 'pr', 'p'
-    ];
+document.addEventListener('DOMContentLoaded', function() {
+    let characterIndex = 0;
 
-    let index = 0;
+    let titleNames = ["p", "pr", "pro", "prok", "prokh", "prokho", "prokhor", "prokhorc", "prokhorchu", "prokhorchuk", "prokhorchu", "prokhorch", "prokhorc", "prokhor", "prokho", "prokh", "prok", "pro", "pr", "p"];
 
-    function updateTitleName() {
-        document.title = frames[index % frames.length];
-        index += 1;
+    window.updateTitleName = function () {
+        document.title = titleNames[characterIndex % titleNames.length];
+        characterIndex++;
     }
 
-    window.updateTitleName = updateTitleName;
-    setInterval(updateTitleName, 500);
+    setInterval(() => {
+        window.updateTitleName();
+    }, 500);
+
 });
