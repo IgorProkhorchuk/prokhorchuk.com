@@ -46,4 +46,11 @@ a:hover { text-decoration: underline; }
     background-color: white;
     border-radius: 50%;
     z-index: 9999;
+
+
+    pointer-events: none;
+    will-change: transform;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
 }
+
