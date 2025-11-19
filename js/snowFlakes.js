@@ -7,6 +7,7 @@ function createSnowflake() {
     snowflake.style.top = '-10px'; // Start just above the viewport
     snowflake.style.backgroundColor = 'white';
     snowflake.style.borderRadius = '50%';
+    snowflake.style.zIndex = '9999'; // Ensure snowflake is on top of other content
     
     // Random starting position
     snowflake.style.left = Math.random() * 100 + 'vw';
