@@ -18,11 +18,11 @@ jobs:
 
       - name: Deploy via rsync over SSH
         uses: easingthemes/ssh-deploy@v5.0.3
-          env:
-            SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-            ARGS: "-rzlt --delete --no-owner --no-group --omit-dir-times"
-            SOURCE: "./"
-            REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
-            REMOTE_USER: ${{ secrets.REMOTE_USER }}
-            TARGET: ${{ vars.TARGET_PATH }}
-            EXCLUDE: ${{ vars.EXCLUDE_FILES }}
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          ARGS: "-rzlt --delete --no-owner --no-group --omit-dir-times"
+          SOURCE: "./"
+          REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+          REMOTE_USER: ${{ secrets.REMOTE_USER }}
+          TARGET: ${{ vars.TARGET_PATH }}
+          EXCLUDE: ${{ vars.EXCLUDE_FILES }}
