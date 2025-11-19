@@ -32,3 +32,10 @@ a:hover { text-decoration: underline; }
 .tag { color: var(--secondary); font-size: smaller; }
 
 .linkContacts { color: var(--accent); text-decoration: none; }
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh);
+        opacity: 0;
+    }
+}

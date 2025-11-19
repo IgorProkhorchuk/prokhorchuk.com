@@ -1,7 +1,12 @@
 function createSnowflake() {
     const snowflake = document.createElement('div');
     snowflake.classList.add('snowflake');
-    snowflake.style.top = '0';  
+    
+    // Make snowflake visible and position it
+    snowflake.style.position = 'fixed';
+    snowflake.style.top = '-10px'; // Start just above the viewport
+    snowflake.style.backgroundColor = 'white';
+    snowflake.style.borderRadius = '50%';
     
     // Random starting position
     snowflake.style.left = Math.random() * 100 + 'vw';
@@ -17,6 +22,7 @@ function createSnowflake() {
     // Random animation duration
     const animationDuration = Math.random() * 5 + 8;
     snowflake.style.animationDuration = animationDuration + 's';
+    snowflake.style.animationName = 'fall'; // Assign the animation
     
     document.body.appendChild(snowflake);
     
