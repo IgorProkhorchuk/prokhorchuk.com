@@ -33,6 +33,10 @@ a:hover { text-decoration: underline; }
     color: var(--accent);
     margin: 0 0 0.5rem 0;
 }
+.tree-greeting {
+    display: inline-block;
+    color: inherit;
+}
 .holiday-message {
     margin: 0 0 1rem 0;
     color: var(--secondary);
