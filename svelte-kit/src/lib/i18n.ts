@@ -57,22 +57,6 @@ export const translations = {
 		'job-search': 'bash: cd: auf der Suche nach neuen Herausforderungen',
 		'contact-email-label': 'E-Mail',
 		'contact-blog-label': 'Blog'
-	},
-	uk: {
-		'seasonal-tree-greeting': 'З Новим роком!',
-		'holiday-message': 'Нехай ваші термінали сяють зеленим, а жоден деплой не падає',
-		'whoami-description': 'Linux-системний адміністратор | Інженер з інфраструктури | Великий прихильник Java',
-		'about-summary': '14 років досвіду y виробничій логістиці та системному адмініструванні',
-		'about-cyclist': 'Завзятий велосипедист',
-		'about-jogger': 'Іноді також бігун',
-		'about-books': 'Фан паперових книг',
-		'about-codewars': 'Падаван на Codewars',
-		'about-triz': 'Прихильник ТРИЗ',
-		'about-gcp': 'Прихильник GCP',
-		'project-booking': 'Система бронювання для перукарні в Берліні',
-		'job-search': 'bash: cd: у пошуках нових викликів',
-		'contact-email-label': 'Ел. пошта',
-		'contact-blog-label': 'Блог'
 	}
 } as const;
 
