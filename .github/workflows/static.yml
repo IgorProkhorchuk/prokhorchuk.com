@@ -1,4 +1,4 @@
-name: Deploy to codebyme.de
+name: Deploy to prokhorchuk.com
 
 on:
   push:
@@ -7,9 +7,25 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: svelte-kit
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: svelte-kit/package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
 
       - name: Add server to known_hosts
         run: |
@@ -21,7 +37,7 @@ jobs:
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           ARGS: "-rzlt --delete --no-owner --no-group --omit-dir-times"
-          SOURCE: "./"
+          SOURCE: "svelte-kit/build/"
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           TARGET: ${{ vars.TARGET_PATH }}
