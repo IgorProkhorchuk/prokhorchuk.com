@@ -5,10 +5,7 @@
 <svelte:head>
 	<link rel="icon" href="/images/logopfcweb.png" />
 	<link rel="manifest" href="/manifest.json" />
-	<link
-		rel="preconnect"
-		href="https://fonts.googleapis.com"
-	/>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link
 		rel="preconnect"
 		href="https://fonts.gstatic.com"
@@ -37,6 +34,7 @@
 
 	:global(a) {
 		color: inherit;
+		text-decoration: none;
 	}
 
 	:global(img) {

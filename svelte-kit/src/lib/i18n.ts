@@ -27,8 +27,7 @@ export const titleFrames = [
 
 export const translations = {
 	en: {
-		'seasonal-tree-greeting': 'Happy New Year!',
-		'holiday-message': 'May your terminals glow green and your deployments stay flawless',
+
 		'whoami-description': 'Linux system administrator | Infrastructure engineer | Big Java fan',
 		'about-summary': '14 years of experience in system administration and manufacturing logistics',
 		'about-cyclist': 'Dedicated cyclist',
@@ -43,8 +42,7 @@ export const translations = {
 		'contact-blog-label': 'Blog'
 	},
 	de: {
-		'seasonal-tree-greeting': 'Frohes neues Jahr!',
-		'holiday-message': 'Mögen deine Terminals grün leuchten und deine Deployments fehlerfrei bleiben',
+
 		'whoami-description': 'Linux-Systemadministrator | Infrastruktur-Ingenieur | Großer Java-Fan',
 		'about-summary': '14 Jahre Erfahrung in Systemadministration und Fertigungslogistik',
 		'about-cyclist': 'Ein engagierter Radler',
