@@ -8,10 +8,13 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			fallback: '404.html'
+		}),
 		prerender: {
 			handleHttpError: ({ path, message }) => {
 				if (path === '/books') {
+					console.log('Ignoring 404 for /books');
 					return;
 				}
 				throw new Error(message);
