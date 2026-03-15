@@ -13,14 +13,14 @@
 
 	const aboutLinks: Array<{ href: string; key: TranslationKey }> = [
 		{
-			href: "https://www.facebook.com/igorprokhorchuk/posts/pfbid02Vw6cArDj4a1E6KdUUz7R8pYuryvLnR3DD5hq5rgHsrBygfnmx5WxCtCg3N5vViNl",
+			href: "/cyclist",
 			key: "about-cyclist",
 		},
 		{
-			href: "https://www.facebook.com/photo/?fbid=1817874761594421&set=a.740446196003955",
+			href: "/jogger",
 			key: "about-jogger",
 		},
-		{ href: "https://codebyme.de/books", key: "about-books" },
+		{ href: "/books", key: "about-books" },
 		{
 			href: "https://www.codewars.com/users/prokhor-chuck",
 			key: "about-codewars",

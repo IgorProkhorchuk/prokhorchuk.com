@@ -1,49 +1,43 @@
 <svelte:head>
-	<title>TRIZ - Igor Prokhorchuk</title>
+	<title>Why TRIZ? - Igor Prokhorchuk</title>
 	<meta
 		name="description"
-		content="TRIZ (Theory of Inventive Problem Solving) — a concise introduction and placeholder for future content."
+		content="TRIZ and its application in modern IT and its parallels with LEAN management."
 	/>
 </svelte:head>
 
 <div class="header">
 	<h1 class="main-title">
-		igor@prokhorchuk.com<span class="prompt">:/triz$</span> <span class="cursor">_</span>
+		<a href="/">..</a><span class="prompt">/</span>triz<span class="prompt"
+			>:$</span
+		>
+		<span class="cursor">_</span>
 	</h1>
 </div>
 
 <div class="section">
-	<p><span class="prompt">$</span> cat status.txt</p>
-	<p>Diese Seite befindet sich noch im Aufbau. Weitere Inhalte und Funktionen folgen in Kürze!</p>
-	<p>This page is still under construction. More content and features will be available soon!</p>
-</div>
-
-<div class="section">
-	<p><span class="prompt">$</span> cat triz_manifesto.txt</p>
+	<p><span class="prompt">$</span> echo $WHY_TRIZ</p>
 	<p>
-		TRIZ (Theory of Inventive Problem Solving) is a methodology based on the analysis of millions of
-		patents to identify universal principles of innovation. It is a powerful tool to overcome
-		technical contradictions and systematically find new solutions.
+		My fascination with TRIZ comes from this place: it's a structured methodology
+		for innovation. It’s about moving beyond "best practices" and finding truly elegant solutions to complex problems.
 	</p>
 </div>
 
 <div class="section">
-	<p><span class="prompt">$</span> ls -l triz_principles/</p>
-	<ul>
-		<li>1. Segmentation</li>
-		<li>2. Extraction</li>
-		<li>3. Local Quality</li>
-		<li>4. Asymmetry</li>
-		<li>5. Consolidation</li>
-		<li>... and 35 more!</li>
-	</ul>
+	<p><span class="prompt">$</span> grep "TRIZ" | lean.log</p>
+	<p>
+		There's a strong parallel between TRIZ and the principles of LEAN management. LEAN is obsessed
+		with eliminating 'Muda', and a core concept in TRIZ is 'Ideality' – the ideal system delivers its function with no cost, no harm, and no waste.
+	</p>
 </div>
 
 <div class="section">
-	<p><span class="prompt">$</span> man contradiction_matrix</p>
+	<p><span class="prompt">$</span> cat contradiction_matrix_it.md</p>
 	<p>
-		The contradiction matrix is the core of TRIZ. It helps to identify technical contradictions and
-		suggests the most relevant of the 40 TRIZ principles for their resolution.
+		TRIZ is famous for its Contradiction Matrix, a tool for solving problems where improving one parameter worsens another. This is the daily reality of software engineering.
+	</p>
+	<p>
+		TRIZ offers 40 inventive principles to systematically attack these contradictions, rather than settling for a mediocre compromise. It’s a way to reframe the problem and find a path where you can have your cake and eat it too.
 	</p>
 </div>
 
