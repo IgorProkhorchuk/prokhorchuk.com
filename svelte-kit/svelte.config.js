@@ -8,7 +8,15 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		prerender: {
+			handleHttpError: ({ path, message }) => {
+				if (path === '/books') {
+					return;
+				}
+				throw new Error(message);
+			}
+		}
 	}
 };
 
