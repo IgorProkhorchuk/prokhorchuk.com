@@ -29,7 +29,7 @@ export const translations = {
 	en: {
 
 		'whoami-description': 'Linux system administrator | Infrastructure engineer | Big Java fan',
-		'about-summary': '14 years of experience in system administration and manufacturing logistics',
+		'about-summary': '14 years of experience in system administration on manufacturing companies',
 		'about-cyclist': 'Dedicated cyclist',
 		'about-jogger': 'Occasional jogger',
 		'about-books': 'Book enthusiast',
@@ -37,6 +37,7 @@ export const translations = {
 		'about-triz': 'TRIZ enthusiast',
 		'about-gcp': 'GCP aficionado',
 		'project-booking': 'Booking system for a hair salon in Berlin',
+		'project-toptravel': 'Travel agency website with custom CRM module',
 		'job-search': 'bash: cd: looking for new challenges',
 		'contact-email-label': 'Email',
 		'contact-blog-label': 'Blog'
@@ -44,7 +45,7 @@ export const translations = {
 	de: {
 
 		'whoami-description': 'Linux-Systemadministrator | Infrastruktur-Ingenieur | Großer Java-Fan',
-		'about-summary': '14 Jahre Erfahrung in Systemadministration und Fertigungslogistik',
+		'about-summary': '14 Jahre Erfahrung in Systemadministration in Produktionsfirmen',
 		'about-cyclist': 'Ein engagierter Radler',
 		'about-jogger': 'Gelegentlicher Jogger',
 		'about-books': 'Bücher-Narr',
@@ -52,6 +53,7 @@ export const translations = {
 		'about-triz': 'TRIZ-Enthusiast',
 		'about-gcp': 'GCP Aficionado',
 		'project-booking': 'Buchungssystem für einen Friseursalon in Berlin',
+		'project-toptravel': 'Reisebüro-Website mit eigenem CRM-Modul',
 		'job-search': 'bash: cd: auf der Suche nach neuen Herausforderungen',
 		'contact-email-label': 'E-Mail',
 		'contact-blog-label': 'Blog'

@@ -35,6 +35,11 @@
 			key: "project-booking",
 			tagline: "#springBoot #postgreSQL #HTMX #Thymeleaf #Vaadin",
 		},
+		{
+			href: "https://gitlab.com/IgorProkhorchuk/toptravel_ck_ua",
+			key: "project-toptravel",
+			tagline: "#svelteKit #prisma #postgreSQL #gitLabCI",
+		},
 	];
 
 	const titleTick = () => {
