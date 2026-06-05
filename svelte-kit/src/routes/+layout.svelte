@@ -1,20 +1,16 @@
 <script lang="ts">
+	import "@fontsource/fira-code/400.css";
+	import "@fontsource/fira-code/500.css";
+	import "@fontsource/space-grotesk/400.css";
+	import "@fontsource/space-grotesk/500.css";
+	import "@fontsource/space-grotesk/600.css";
+
 	let { children } = $props();
 </script>
 
 <svelte:head>
 	<link rel="icon" href="/images/logopfcweb.png" />
 	<link rel="manifest" href="/manifest.json" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link
-		rel="preconnect"
-		href="https://fonts.gstatic.com"
-		crossorigin="anonymous"
-	/>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Space+Grotesk:wght@400;500;600&display=swap"
-		rel="stylesheet"
-	/>
 	<meta name="theme-color" content="#0a0a0a" />
 </svelte:head>
 

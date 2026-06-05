@@ -127,5 +127,17 @@
 </div>
 
 <div class="section">
+	<p><span class="prompt">$</span> ls -al /etc/legal</p>
+	<ul>
+		<li>
+			<a href="/impressum">{t(locale, "link-impressum")}</a>
+		</li>
+		<li>
+			<a href="/datenschutz">{t(locale, "link-datenschutz")}</a>
+		</li>
+	</ul>
+</div>
+
+<div class="section">
 	<p><span class="prompt">$</span> <span class="cursor">_</span></p>
 </div>

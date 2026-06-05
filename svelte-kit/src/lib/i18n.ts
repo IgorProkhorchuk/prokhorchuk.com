@@ -40,7 +40,9 @@ export const translations = {
 		'project-toptravel': 'Travel agency website with custom CRM module',
 		'job-search': 'bash: cd: looking for new challenges',
 		'contact-email-label': 'Email',
-		'contact-blog-label': 'Blog'
+		'contact-blog-label': 'Blog',
+		'link-impressum': 'Impressum',
+		'link-datenschutz': 'Datenschutz'
 	},
 	de: {
 
@@ -56,7 +58,9 @@ export const translations = {
 		'project-toptravel': 'Reisebüro-Website mit eigenem CRM-Modul',
 		'job-search': 'bash: cd: auf der Suche nach neuen Herausforderungen',
 		'contact-email-label': 'E-Mail',
-		'contact-blog-label': 'Blog'
+		'contact-blog-label': 'Blog',
+		'link-impressum': 'Impressum',
+		'link-datenschutz': 'Datenschutz'
 	}
 } as const;
 
