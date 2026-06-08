@@ -28,7 +28,7 @@ export const titleFrames = [
 export const translations = {
 	en: {
 
-		'whoami-description': 'Linux system administrator | Infrastructure engineer | Big Java fan',
+		'whoami-description': 'DevOps | Infrastructure engineer | Big Java fan',
 		'about-summary': '14 years of experience in system administration on manufacturing companies',
 		'about-cyclist': 'Dedicated cyclist',
 		'about-jogger': 'Occasional jogger',
@@ -38,15 +38,18 @@ export const translations = {
 		'about-gcp': 'GCP aficionado',
 		'project-booking': 'Booking system for a hair salon in Berlin',
 		'project-toptravel': 'Travel agency website with custom CRM module',
+		'project-gymcrm': 'Gym CRM management system',
 		'job-search': 'bash: cd: looking for new challenges',
 		'contact-email-label': 'Email',
 		'contact-blog-label': 'Blog',
+		'contact-gitlab-label': 'GitLab',
+		'contact-github-label': 'GitHub',
 		'link-impressum': 'Impressum',
 		'link-datenschutz': 'Datenschutz'
 	},
 	de: {
 
-		'whoami-description': 'Linux-Systemadministrator | Infrastruktur-Ingenieur | Großer Java-Fan',
+		'whoami-description': 'DevOps | Infrastruktur-Ingenieur | Großer Java-Fan',
 		'about-summary': '14 Jahre Erfahrung in Systemadministration in Produktionsfirmen',
 		'about-cyclist': 'Ein engagierter Radler',
 		'about-jogger': 'Gelegentlicher Jogger',
@@ -56,9 +59,12 @@ export const translations = {
 		'about-gcp': 'GCP Aficionado',
 		'project-booking': 'Buchungssystem für einen Friseursalon in Berlin',
 		'project-toptravel': 'Reisebüro-Website mit eigenem CRM-Modul',
+		'project-gymcrm': 'Gym CRM-Verwaltungssystem',
 		'job-search': 'bash: cd: auf der Suche nach neuen Herausforderungen',
 		'contact-email-label': 'E-Mail',
 		'contact-blog-label': 'Blog',
+		'contact-gitlab-label': 'GitLab',
+		'contact-github-label': 'GitHub',
 		'link-impressum': 'Impressum',
 		'link-datenschutz': 'Datenschutz'
 	}
