@@ -35,3 +35,7 @@ dist/
 
 # System
 Thumbs.db
+
+# Generated gallery assets
+svelte-kit/static/gallery/
+svelte-kit/src/lib/gallery/generated.json

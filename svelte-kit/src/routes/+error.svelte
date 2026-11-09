@@ -1,7 +1,3 @@
-<script lang="ts">
-	import { page } from '$app/stores';
-</script>
-
 <div class="terminal-shell">
 	<h1 class="main-title">
 		<span class="prompt">$&gt;</span> 404: Page Not Found

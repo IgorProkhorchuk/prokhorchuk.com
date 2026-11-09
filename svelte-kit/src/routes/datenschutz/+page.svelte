@@ -1,16 +1,5 @@
-<script lang="ts">
-  import { detectLocale, fallbackTitle, type Locale } from "$lib/i18n";
-  import { onMount } from "svelte";
-
-  let locale: Locale = detectLocale();
-
-  onMount(() => {
-    locale = detectLocale();
-  });
-</script>
-
 <svelte:head>
-  <title>Datenschutz | {fallbackTitle}</title>
+  <title>Datenschutz | prokhorchuk</title>
 </svelte:head>
 
 <div class="header">
