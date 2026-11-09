@@ -70,43 +70,62 @@
 
 <div class="section">
   <p><span class="prompt">$</span> whoami</p>
-  <p>Hi, I’m Igor. I work with servers, write code and occasionally convince the two to cooperate. This little corner of the internet is mine. Welcome.</p>
+  <p>Hi, I’m Igor. I make business software work together.
+      Or at least keep myself busy making business software. ;-)</p>
 </div>
 
 <div class="section">
   <p><span class="prompt">$</span> cat about.txt</p>
-  <p>Away from the keyboard, I swap CPU cycles for bicycle ones. Running is supported too, just at a lower clock speed.</p>
-  <ul>
+  <p>Somewhere between software development and finance,
+      I found ERP, WMS, and accounting software.
+      Turns out I don’t have to choose.</p>
+  <p>Java, Kotlin, and a big fun of Quarkus.
+    Occasional contributions to open source.</p>
+  <!-- <ul>
     {#each aboutLinks as item}
       <li><a href={item.href}>{item.label}</a></li>
     {/each}
-  </ul>
+  </ul> -->
 </div>
 
 <div class="section">
   <p><span class="prompt">$</span> ls ~/projects</p>
-  <p>Side projects, experiments and things that started with “this should be a quick script”. The code lives here:</p>
+  <p>Some experiments and things that started with “this should be a quick script” usually live here:</p>
   <ul>
-    <li><a href="https://gitlab.com/IgorProkhorchuk" class="linkContacts">GitLab</a></li>
-    <!-- <li><a href="https://github.com/IgorProkhorchuk" class="linkContacts">GitHub</a></li> -->
+    <li>
+      <span>GitLab</span>:
+      <a href="https://gitlab.com/IgorProkhorchuk" class="linkContacts">
+        gitlab.com/IgorProkhorchuk
+      </a>
+    </li>
+    <li>
+      <span>Github</span>:
+      <a href="https://github.com/IgorProkhorchuk" class="linkContacts">github.com/IgorProkhorchuk</a>
+    </li>
   </ul>
 </div>
 
 <div class="section">
   <p><span class="prompt">$</span> ./contact_me.sh</p>
-  <p>Email works. No ticket required. Longer thoughts go on the blog.</p>
   <ul>
     <li>
-      <span>Email</span>:
+      <span>mailto</span>:
       <a href="mailto:igor@prokhorchuk.com" class="linkContacts"
         >igor@prokhorchuk.com</a
       >
     </li>
+  </ul>
+</div>
+
+<div class="section">
+  <p><span class="prompt">$</span> find /web -type "blog" -iname "code*" -exec print {'{}'} \;</p>
+  <ul>
     <li>
-      <span>Blog</span>:
+      <span>bash: blog: </span>
       <a href="https://codebyme.de" class="linkContacts">codebyme.de</a>
     </li>
   </ul>
+
 </div>
 
 <!-- <div class="section">
