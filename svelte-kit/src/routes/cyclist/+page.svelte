@@ -1,97 +1,41 @@
 <script lang="ts">
-	type GalleryImage = {
-		src: string;
-		alt: string;
-	};
-
-	type GalleryGroup = {
-		date: string;
-		description: string;
-		images: GalleryImage[];
-	};
-
-	const gallery: GalleryGroup[] = [
-		{
-			date: 'Cherkasy',
-			description: 'A trip to Cherkasy.',
-			images: [
-				{ src: '/images/cyclist/cherkasy/QVZnd09FMWJ1a2JEd3Mtb2tOZUlyRHVH.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZnLW9VV0RGcEZlZ3pOcTBkZGJRS1Za.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZnMEVEVXhMdmQ5WmdnaVo1WDFXcXZ1.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZnN2htQnQwVnJXRVRtSkZyMW9JcDZ6.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZnOWh6bzk1dF9DMV9aa1FGTDRlcGF0.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZnQzZmQ3Iya0VCZnVkUUdvUWFicDkx.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZnWDFhMmgyc2VzejBtdHRCLVQxTGV2.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZodDBoWXg3WWNmUUVaM1NzUjZLZkhU.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZoM0t6TDhKUWpXeWtJUEc4VWZpY0ll.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZoVnoxSHVocGdiVHJNd3FQdzBPV2NK.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZoWklXdkxXa1RFcEhQaFFFdFFWMGc5.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZoZXYzVXZZQ081WG1NMTFXVmxOUlh5.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZpcjRrSWJOaGE4ME83cFQ5UFI0dlV3.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZpdWVGVEFFM0gzcHRMN3Jvek80T1Fl.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZpYU9iUUZGbkdTU0tfZ092cXBscHJJ.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZqb2I5cGJVZVlEQVVqQUNqT1FpOFA1.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZqcXpjTnJBTDJGWDBINWtlSGw3bFN3.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZqMDdwb3c1NkY0NzlsV1YxdzRmSHdv.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZqMGE0X0ZKS3ZRRGQyb3VGNnpqYmJw.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZqNHpkeDBIMEUzTUc1eTZUQ2M3UzJl.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZqNnVQUXZxQ1Vyc29TTGFSYUN3OXU3.jpeg', alt: 'Cherkasy' },
-				{ src: '/images/cyclist/cherkasy/QVZqX1pOYW9DcDNDUnMtSFZzc0FFT01m.jpeg', alt: 'Cherkasy' }
-			]
-		},
-		{
-			date: 'Slovakia',
-			description: 'A trip to Slovakia.',
-			images: [
-				{ src: '/images/cyclist/slovakia/QVZnNW1IcVVzdldnSWlFaGlrUGJLb25O.jpeg', alt: 'Slovakia' },
-				{ src: '/images/cyclist/slovakia/QVZnRDQ5d0t0M2FxejkxRjdnVUZXNHhQ.jpeg', alt: 'Slovakia' },
-				{ src: '/images/cyclist/slovakia/QVZnZUxuZ2l2Ny1teGJ4ak9ibWs5ZUlw.jpeg', alt: 'Slovakia' },
-				{ src: '/images/cyclist/slovakia/QVZoNlJNd3d5M0tpZ3pFU0VNX3Y4SjVa.jpeg', alt: 'Slovakia' },
-				{ src: '/images/cyclist/slovakia/QVZoQThLY3Y4eW03ejg3eXNMMUNEeHds.jpeg', alt: 'Slovakia' },
-				{ src: '/images/cyclist/slovakia/QVZoZ09KNllNZTFvUHZWaTBvTFlYTTI2.jpeg', alt: 'Slovakia' },
-				{ src: '/images/cyclist/slovakia/QVZpaE9jZFBXcGpreVFsQUw4V1duU3BO.jpeg', alt: 'Slovakia' },
-				{ src: '/images/cyclist/slovakia/QVZpdjRSdHNaYmZmYXFSX2dZZ2VzaGt2.jpeg', alt: 'Slovakia' },
-				{ src: '/images/cyclist/slovakia/QVZpZmctRzhxZ1VMbm9uT2wtMXpQd0pn.jpeg', alt: 'Slovakia' },
-				{ src: '/images/cyclist/slovakia/QVZqMUR6TWh2RmJFNTlsN2hLUXJiUlJQ.jpeg', alt: 'Slovakia' },
-				{ src: '/images/cyclist/slovakia/QVZqSjlrTlllc2hZNzE5czFtRHN5eExB.jpeg', alt: 'Slovakia' }
-			]
-		}
-	];
+  import albums from '#lib/gallery/generated.json';
+  import Shell from '#lib/gallery/Shell.svelte';
+  const trips = albums.filter((album) => album.id !== 'jogger');
 </script>
 
-<div class="terminal-shell">
-	<h1 class="main-title">
-		<a href="/">..</a><span class="prompt">/</span>cyclist<span class="prompt"
-			>:$</span
-		>
-		<span class="cursor">_</span>
-	</h1>
-
-	{#each gallery as group}
-		<div class="section">
-			<h2>{group.date}</h2>
-			<p>{group.description}</p>
-			<div class="gallery">
-				{#each group.images as image}
-					<div class="gallery-item">
-						<img src={image.src} alt={image.alt} />
-					</div>
-				{/each}
-			</div>
-		</div>
-	{/each}
-</div>
+<Shell title="cyclist">
+  <p class="intro">A few rides, a few detours.</p>
+  <div class="albums">
+    {#each trips as album, index}
+      <a class="album" href={`/cyclist/${album.id}`}>
+        <div class="cover">
+          <img src={album.cover.thumbnail} srcset={album.cover.srcset} sizes="(max-width: 600px) calc(100vw - 3rem), (max-width: 1000px) calc((100vw - 4rem) / 2), 468px" width="480" height="320" alt={album.title} loading={index < 2 ? 'eager' : 'lazy'} decoding="async" />
+          {#if album.cover.kind === 'video'}<span class="play" aria-hidden="true">▶</span>{/if}
+        </div>
+        <div class="caption"><h2>{album.title}<span aria-hidden="true"> ↗</span></h2>
+          <p>
+            {#if album.items.some((item) => item.kind === 'image')}{album.items.filter((item) => item.kind === 'image').length} photos{/if}
+            {#if album.items.some((item) => item.kind === 'image') && album.items.some((item) => item.kind === 'video')} · {/if}
+            {#if album.items.some((item) => item.kind === 'video')}{album.items.filter((item) => item.kind === 'video').length} videos{/if}
+          </p>
+        </div>
+      </a>
+    {/each}
+  </div>
+</Shell>
 
 <style>
-	.gallery {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-		gap: 1rem;
-	}
-
-	.gallery-item img {
-		width: 100%;
-		height: auto;
-		border-radius: 8px;
-	}
+  .intro { color: #b0b8aa; }
+  .albums { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+  .album { border: 1px solid #30382b; border-radius: 5px; overflow: hidden; background: #12150f; }
+  .album:hover { border-color: #7ba85b; }
+  .cover { position: relative; aspect-ratio: 3 / 2; }
+  .cover img { width: 100%; height: 100%; object-fit: cover; }
+  .play { position: absolute; inset: 0; display: grid; place-items: center; font-size: 2rem; text-shadow: 0 2px 8px black; }
+  .caption { padding: 1rem; }
+  h2 { margin: 0; font-size: 1rem; }
+  h2 span { color: #92cc70; }
+  .caption p { margin: .4rem 0 0; font-size: .8rem; color: #a8b59e; }
+  @media (max-width: 600px) { .albums { grid-template-columns: 1fr; } }
 </style>
