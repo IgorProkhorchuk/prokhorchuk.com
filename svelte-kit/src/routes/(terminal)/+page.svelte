@@ -9,8 +9,6 @@
     type TranslationKey,
   } from "$lib/i18n";
 
-  type Project = { href: string; key: TranslationKey; tagline?: string };
-
   const aboutLinks: Array<{ href: string; key: TranslationKey }> = [
     {
       href: "/cyclist",
@@ -20,31 +18,11 @@
       href: "/jogger",
       key: "about-jogger",
     },
-    { href: "/books", key: "about-books" },
     {
       href: "https://www.codewars.com/users/prokhor-chuck",
       key: "about-codewars",
     },
     { href: "/triz", key: "about-triz" },
-    { href: "https://g.dev/ihorprokhorchuk", key: "about-gcp" },
-  ];
-
-  const projects: Project[] = [
-    {
-      href: "https://cut-by-me.de/",
-      key: "project-booking",
-      tagline: "#springBoot #postgreSQL #HTMX #Thymeleaf #Vaadin",
-    },
-    {
-      href: "https://gitlab.com/IgorProkhorchuk/toptravel_ck_ua",
-      key: "project-toptravel",
-      tagline: "#svelteKit #prisma #postgreSQL #gitLabCI",
-    },
-    {
-      href: "https://gitlab.com/IgorProkhorchuk/gym_crm",
-      key: "project-gymcrm",
-      tagline: "#Spring #postgres #redis #docker_compose #hibernate #spring_security",
-    },
   ];
 
   const titleTick = () => {
@@ -67,7 +45,7 @@
   <title>{fallbackTitle}</title>
   <meta
     name="description"
-    content="Igor Prokhorchuk — DevOps and infrastructure engineer. Cycling, Java, and well-behaved deployments."
+    content="Igor Prokhorchuk — servers, code and life beyond the terminal. A few links and a way to get in touch."
   />
 </svelte:head>
 
@@ -94,31 +72,17 @@
 </div>
 
 <div class="section">
-  <p>
-    <span class="prompt">$</span> sudo find /home/igor/projects -type d -name "current"
-    -exec ls -l &#123;&#125; \\;
-  </p>
+  <p><span class="prompt">$</span> ls ~/projects</p>
+  <p>{t(locale, "projects-summary")}</p>
   <ul>
-    {#each projects as project}
-      <li>
-        <a href={project.href}>{t(locale, project.key)}</a>
-        {#if project.tagline}
-          <span class="tag">{project.tagline}</span>
-        {/if}
-      </li>
-    {/each}
-  </ul>
-</div>
-
-<div class="section">
-  <p><span class="prompt">$</span> cd ~/current\ job/</p>
-  <ul>
-    <li>{t(locale, "job-search")}</li>
+    <li><a href="https://gitlab.com/IgorProkhorchuk" class="linkContacts">GitLab</a></li>
+    <li><a href="https://github.com/IgorProkhorchuk" class="linkContacts">GitHub</a></li>
   </ul>
 </div>
 
 <div class="section">
   <p><span class="prompt">$</span> ./contact_me.sh</p>
+  <p>{t(locale, "contact-summary")}</p>
   <ul>
     <li>
       <span>{t(locale, "contact-email-label")}</span>:
@@ -129,14 +93,6 @@
     <li>
       <span>{t(locale, "contact-blog-label")}</span>:
       <a href="https://codebyme.de" class="linkContacts">codebyme.de</a>
-    </li>
-    <li>
-      <span>{t(locale, "contact-gitlab-label")}</span>:
-      <a href="https://gitlab.com/IgorProkhorchuk" class="linkContacts">gitlab.com/IgorProkhorchuk</a>
-    </li>
-    <li>
-      <span>{t(locale, "contact-github-label")}</span>:
-      <a href="https://github.com/IgorProkhorchuk" class="linkContacts">github.com/IgorProkhorchuk</a>
     </li>
   </ul>
 </div>
