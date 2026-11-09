@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { detectLocale, fallbackTitle, type Locale } from "$lib/i18n";
+  import { detectLocale, fallbackTitle, type Locale } from "#lib/i18n.js";
   import { onMount } from "svelte";
 
   let locale: Locale = detectLocale();
