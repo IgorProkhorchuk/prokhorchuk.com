@@ -9,6 +9,7 @@
     'prokho',
     'prokhor',
     'prokhorc',
+    'prokhorch',
     'prokhorchu',
     'prokhorchuk',
     'prokhorchu',
@@ -54,11 +55,10 @@
 </script>
 
 <svelte:head>
-  <title>{titleFrames[0]}</title>
-  <meta
-    name="description"
-    content="Igor Prokhorchuk"
-  />
+  <title>Igor Prokhorchuk — ERP, WMS, and backend engineering</title>
+  <meta name="description" content="Backend engineer making ERP, WMS, and accounting software work together. Java, Kotlin, Quarkus, Kubernetes." />
+  <meta property="og:title" content="Igor Prokhorchuk" />
+  <meta property="og:description" content="Making business software work together." />
 </svelte:head>
 
 <div class="header">
@@ -70,14 +70,13 @@
 
 <div class="section">
   <p><span class="prompt">$</span> whoami</p>
-  <p>Hi, I’m Igor. I make business software work together.
-      Or at least keep myself busy making business software. ;-)</p>
+  <p>I make business software work together. Or at least I keep busy trying.</p>
 </div>
 
 <div class="section">
   <p><span class="prompt">$</span> cat about.txt</p>
-  <p>Somewhere in between with ERP, WMS, and accounting software.</p>
-  <p>Java, Kotlin, Quarkus, K8s, Linux engineering, and a big fan of open source, with occasional contributions.</p>
+  <p>Somewhere between ERP, WMS, and accounting software.</p>
+  <p>Java, Kotlin, Quarkus, Kubernetes, and Linux. Big fan of open source, with the occasional contribution.</p>
   <!-- <ul>
     {#each aboutLinks as item}
       <li><a href={item.href}>{item.label}</a></li>
@@ -87,7 +86,7 @@
 
 <div class="section">
   <p><span class="prompt">$</span> ls ~/projects</p>
-  <p>things that started with “this should be a quick script” usually live here:</p>
+  <p>things that started as “this should be a quick script” usually end up here:</p>
   <ul>
     <li>
       <span>GitLab</span>:
