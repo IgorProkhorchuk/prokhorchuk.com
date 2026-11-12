@@ -76,11 +76,8 @@
 
 <div class="section">
   <p><span class="prompt">$</span> cat about.txt</p>
-  <p>Somewhere between software development and finance,
-      I found ERP, WMS, and accounting software.
-      Turns out I don’t have to choose.</p>
-  <p>Java, Kotlin, and a big fun of Quarkus.
-    Occasional contributions to open source.</p>
+  <p>Somewhere in between with ERP, WMS, and accounting software.</p>
+  <p>Java, Kotlin, Quarkus, K8s, Linux engineering, and a big fan of open source, with occasional contributions.</p>
   <!-- <ul>
     {#each aboutLinks as item}
       <li><a href={item.href}>{item.label}</a></li>
@@ -90,7 +87,7 @@
 
 <div class="section">
   <p><span class="prompt">$</span> ls ~/projects</p>
-  <p>Some experiments and things that started with “this should be a quick script” usually live here:</p>
+  <p>things that started with “this should be a quick script” usually live here:</p>
   <ul>
     <li>
       <span>GitLab</span>:
@@ -98,10 +95,10 @@
         gitlab.com/IgorProkhorchuk
       </a>
     </li>
-    <li>
+    <!-- <li>
       <span>Github</span>:
       <a href="https://github.com/IgorProkhorchuk" class="linkContacts">github.com/IgorProkhorchuk</a>
-    </li>
+    </li> -->
   </ul>
 </div>
 
